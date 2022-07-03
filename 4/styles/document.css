@@ -1,0 +1,80 @@
+:root {
+  --bg-accent-secondary: #444444;
+  --bg-accent: #FFE17F;
+  --bg-accent-bright: #FFC700;
+  --bg-main-secondary-pale: #EBEBEB;
+  --bg-main-secondary: #F0F0F0;
+  --bg-main: #FFFFFF;
+  --color-main: #000000;
+  --color-accent: #FFFFFF;
+  --color-secondary: #444444;
+  --font-default: "Rubik", sans-serif;
+  --font-heading: "Raleway", sans-serif;
+
+  --font-size_main: 18px;
+  --line-height_main: 30px;
+  --font-weight_main: 400;
+  --line-height_main_uppercase: 21px;
+
+  --font-size_main_heading: 50px;
+  --line-height_main_heading: 50px;
+  --font-weight_main_heading: 800;
+
+
+  --line-height_ui: 20px;
+  --font-size_ui: 16px;
+
+  --font-size_secondary: 16px;
+  --line-height_secondary: 18px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  margin: 0;
+  color: var(--color-main);
+  font-family: var(--font-default);
+  font-size: var(--font-size_main);
+  font-weight: var(--font-weight_main);
+  line-height: var(--line-height_main);
+}
+
+.catalog {
+  background-color: var(--bg-main-secondary);
+}
+
+.catalog-listing__wrapper {
+  background-color: var(--bg-main);
+}
+
+.catalog-listing {
+  list-style: none;
+}
+
+main {
+  background-color: var(--bg-main-secondary);
+}
+
+.doc__about-us {
+  background: var(--bg-main);
+}
+
+.doc-header {
+  background: linear-gradient(0, var(--bg-accent), var(--bg-accent)) no-repeat 0 40px;
+  background-size: 100% 300px;
+}
