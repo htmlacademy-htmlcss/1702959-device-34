@@ -154,14 +154,18 @@ body {
   background-image: url("../images/icons/search.svg");
   background-size: cover;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: 16px;
+  top: 12px;
 }
 
 .search-string__input {
   padding: 8px 46px;
   box-sizing: border-box;
   width: 359px;
+  border-radius: 50px 0 0 50px;
+  border: 2px solid black;
+  background: transparent;
+  border-right: none;
 }
 
 .search-string__input,
@@ -177,10 +181,10 @@ body {
 .search-string__submit {
   width: 160px;
   box-sizing: border-box;
-}
-
-.search-string__submit {
   text-align: center;
+  background: transparent;
+  border-radius: 0 50px 50px 0;
+  border: 2px solid black;
 }
 
 /*nav-lists*/
@@ -348,6 +352,19 @@ body {
   margin: 0 auto 0 424px;
 }
 
+.social-menu__item:nth-child(1) .social-icon {
+  --bg: url('../images/content/social/1-telegram.svg')
+}
+
+.social-menu__item:nth-child(2) .social-icon {
+  --bg: url('../images/content/social/2-youtube.svg')
+}
+
+.social-menu__item:nth-child(3) .social-icon {
+  --bg: url('../images/content/social/3-twitter.svg')
+}
+
+
 .social-icon {
   --bg: "#";
   background-image: var(--bg);
@@ -400,6 +417,7 @@ body {
   background-size: 100% 100%;
   width: 13px;
   height: 12px;
+  margin-right: 13px;
 }
 
 .compare-btn {
@@ -412,6 +430,7 @@ body {
   background-size: 100% 100%;
   width: 10px;
   height: 12px;
+  margin-right: 12px;
 }
 
 .cart-btn::before {
@@ -420,6 +439,25 @@ body {
   background-size: 100% 100%;
   width: 16px;
   height: 14px;
+  margin-right: 12px;
+}
+
+.cart-btn {
+  position: relative;
+}
+
+.cart-btn__counter {
+  --size: 21px;
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  left: -15px;
+  top: 10px;
+  background: #FFF;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -599,6 +637,10 @@ button.line-btn {
   right: calc(var(--icon-size) / 2 - var(--size) / 2);
 }
 
+.notify__info-message_delivery {
+  --message-icon: url('../images/icons/delivery.svg');
+}
+
 /*LANDING PAGE*/
 /*promo section*/
 /*slider*/
@@ -632,6 +674,14 @@ button.line-btn {
   top: 211px;
   left: 30px;
   width: calc(var(--slide-col-width) - 50px);
+}
+
+.slideshow-control__next-slide,
+.slideshow-control__prev-slide {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .slideshow-control__next-slide::before {
@@ -794,6 +844,31 @@ button.line-btn {
   margin-bottom: 32px;
 }
 
+.category-list__item:nth-child(1) .category-list__anchor {
+  --bg: url('../images/content/categories/category-1-vr.svg')
+}
+
+.category-list__item:nth-child(2) .category-list__anchor {
+  --bg: url('../images/content/categories/category-2-handlesticks.svg')
+}
+
+.category-list__item:nth-child(3) .category-list__anchor {
+  --bg: url('../images/content/categories/category-3-acp.svg')
+}
+
+.category-list__item:nth-child(4) .category-list__anchor {
+  --bg: url('../images/content/categories/category-4-fitbrace.svg')
+}
+
+.category-list__item:nth-child(5) .category-list__anchor {
+  --bg: url('../images/content/categories/category-5-swatch.svg')
+}
+
+.category-list__item:nth-child(6) .category-list__anchor {
+  --bg: url('../images/content/categories/category-6-qb.svg')
+}
+
+
 /*services section*/
 .doc-services {
   background: linear-gradient(0, var(--bg-main), var(--bg-main)) no-repeat 0 0;
@@ -892,6 +967,19 @@ button.line-btn {
   content: var(--bg);
   display: inline-block;
 }
+
+.service-summary:nth-child(1) {
+  --bg: url('../images/content/services/service-1-delivery.svg')
+}
+
+.service-summary:nth-child(2) {
+  --bg: url('../images/content/services/service-2-garanty.svg')
+}
+
+.service-summary:nth-child(3) {
+  --bg: url('../images/content/services/service-3-credit.svg')
+}
+
 
 /*about-us section*/
 .doc__about-us .notify {
@@ -1013,6 +1101,14 @@ button.line-btn {
   flex-grow: 1;
 }
 
+.subscribe-form__input {
+  background: none;
+  border: none;
+  border-bottom: 3px solid #C4C4C4;
+  background: none;
+  padding: 16px 11px;
+}
+
 .subscribe-form__input,
 .subscribe-form__input::placeholder {
   font-style: inherit;
@@ -1035,6 +1131,10 @@ button.line-btn {
   text-transform: uppercase;
   min-height: 57px;
   box-sizing: border-box;
+  padding: 15px 36px;
+  cursor: pointer;
+  border: none;
+  border: 3px solid #C4C4C4;
 }
 
 .feature-item {
